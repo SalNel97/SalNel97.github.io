@@ -37,7 +37,7 @@ Column {data-width=700}
 
 [back to homepage](https://salnel97.github.io/index.html)\
 
-### A bar plot showing the number of inspections per restaurant cuisine type.
+### A bar plot showing the number of inspections per restaurant cuisine type
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 
@@ -63,7 +63,7 @@ rest_inspec %>%
 Column {data-width=300}
 -----------------------------------------------------------------------
 
-### A box plot showing the average inspection score per Borough
+### A box plot showing the average inspection score per borough
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 
@@ -82,7 +82,7 @@ rest_inspec %>%
 
 ```
 
-### Scatter plot of inspection score as a function of inspection date.
+### Scatter plot of inspection score as a function of inspection date
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 
