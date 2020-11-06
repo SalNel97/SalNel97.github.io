@@ -6,6 +6,8 @@ navbar:
   right:
     - text: "About"
       href: about.html
+    - text: "HW 4 Dashboard"
+      href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<salah.e@columbia.edu>
     - icon: fa-github fa-lg
