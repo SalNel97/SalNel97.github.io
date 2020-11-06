@@ -2,6 +2,7 @@
 title: "NYC Restaurant Inspections"
 output: 
   flexdashboard::flex_dashboard:
+    theme: flatly
     orientation: columns
     vertical_layout: fill
     source: embed
