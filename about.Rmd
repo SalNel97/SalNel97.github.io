@@ -13,8 +13,10 @@ output:
 * **The Ohio State University, Columbus, Ohio**
 
   Bachelor of Science with Honors in Physics (Life Sciences Track), History Minor\
-  Graduated May 2018
   
+  *Graduated May 2018*
+  
+\
 
 * **Columbia University Mailman School of Public Health, New York, New York**
   
@@ -23,6 +25,14 @@ output:
 
 ### Research Experience
 
+* **Under the lab group of Abraham Badu-Tawiah at The Ohio State University**
+  *Undergraduate-level research assistant (September 2017 – present)*
+  
+  * Research involving the detection of biomarkers (diseases like malaria) through analytical chemistry techniques, mainly mass spectroscopy.
+  
+  * Using research techniques to eliminate varying factors to optimize a system of chemical reactions and their detection techniques into a system that can consistently detect various diseases at an extremely affordable price.
+  
+  * Preliminary research involving optimizing storing techniques and durations for blood droplets for future analytical testing while trying to maximize signal strength. This involved either mixing different polymer compounds with the blood, or by adding a protective external polymer layer to blood droplets after-the-fact.
 
 
 ### Work Experience
@@ -31,14 +41,40 @@ output:
 
   * Tutored students who required extra help in grasping and studying mathematical concepts for their math courses.
   
+\
+
 * **Office Assistant at Raney House, OSU (August 2016 – May 2017)**
 
   * Daily front desk tasks such as sorting mail, and answering residents’ inquiries.
-  * Helping organize residence hall events
+  
+  * Helping organize residence hall events.
 
 
 ### Volunteer Experience
 
+* **Yemen German Hospital, Sana’a, Yemen (July 2013 – August 2013)**
+
+  * Recorded patient information in designated forms.
+  
+  * Assisted patients.
+  
+  * Helped doctors and nurses in multiple departments with various tasks and errands.
+  
+  * Learned from doctors by observing them perform diagnostic techniques and medical procedures.
+
+\
+  
+* **The Ohio State University Wexner Medical Center (February 2017 – June 2017)**
+
+  * Helped visitors locate the destination they want to go to.
+  
+  * Helped the radiology department with assigning patients and filing their patient files for x-rays.
+  
+  * Helped patients in 6 Ross (Heart Failure Unit) with their needs, while also helping in changing their needle baskets and refilling their linen and medical equipment inventor.
 
 
 ### Other
+
+* Fluent in Arabic.
+
+* Proficient in C++, R, and SAS.
