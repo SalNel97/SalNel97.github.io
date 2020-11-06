@@ -63,7 +63,7 @@ rest_inspec %>%
 Column {data-width=300}
 -----------------------------------------------------------------------
 
-### A box plot showing the average inpection score per Borough
+### A box plot showing the average inspection score per Borough
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 
