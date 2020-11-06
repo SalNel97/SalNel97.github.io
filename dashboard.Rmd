@@ -32,38 +32,73 @@ rest_inspec =
 ```
 
 
-Column {data-width=550}
+Column {data-width=700}
 -----------------------------------------------------------------------
 
 [back to homepage](https://salnel97.github.io/index.html)\
 
-### Scatter plot of inspection score as a function of inspection date.
+### A bar plot showing the number of inspections per restaurant cuisine type.
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
+
 rest_inspec %>% 
-  mutate(label = str_c("Score: ", score)) %>% 
+  count(cuisine_description) %>% 
+  mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>% 
   plot_ly(
-    x = ~inspection_date, y = ~score, color = ~critical_flag, text = ~label, alpha = .5, type = "scatter", mode = "markers")
+    x = ~cuisine_description,
+    y = ~n,
+    alpha = .5,
+    type = "bar",
+    mode = "markers",
+    colors = "viridis") %>% 
+  layout(xaxis = list(title = ' ', tickangle = 45),
+         yaxis = list(title = 'Count'),
+         width = 1250,
+         height = 500,
+         margin = list(b = 160, l = 50),
+         showlegend = FALSE)
+
 ```
 
-Column {data-width=450}
+Column {data-width=300}
 -----------------------------------------------------------------------
 
 ### A box plot showing the average inpection score per Borough
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
+
 rest_inspec %>% 
   plot_ly(
-    x = ~boro, y = ~score, color = ~boro, alpha = .5, type = "box", mode = "markers", colors = "viridis")
+    x = ~boro,
+    y = ~score,
+    color = ~boro,
+    alpha = .5,
+    type = "box",
+    mode = "markers",
+    colors = "viridis") %>% 
+  layout(xaxis = list(title = 'Borough'),
+         yaxis = list(title = 'Inspection Score'),
+         showlegend = FALSE)
+
 ```
 
-### A bar plot showing the number of inspections per restaurant cuisine type.
+### Scatter plot of inspection score as a function of inspection date.
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
+
 rest_inspec %>% 
-  count(cuisine_description) %>% 
-  mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>% 
+  mutate(label = str_c("Score: ", score)) %>% 
   plot_ly(
-    x = ~cuisine_description, y = ~n, alpha = .5, type = "bar", mode = "markers", colors = "viridis")
+    x = ~inspection_date,
+    y = ~score,
+    color = ~critical_flag,
+    text = ~label,
+    alpha = .5,
+    type = "scatter",
+    mode = "markers") %>% 
+   layout(xaxis = list(title = 'Inspection Date'),
+         yaxis = list(title = 'Inspection Score'),
+         showlegend = FALSE)
+  
 ```
 
