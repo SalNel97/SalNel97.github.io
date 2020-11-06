@@ -1,0 +1,55 @@
+---
+title: "Untitled"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(flexdashboard)
+
+library(htmlwidgets)
+```
+
+<!-- Setting up dataframe and filtering it out. -->
+
+```{r}
+data("rest_inspec")
+
+rest_inspec =
+  rest_inspec %>% 
+  select(inspection_date, boro, dba, cuisine_description, action, grade, score, critical_flag) %>% 
+  filter(
+    action == c("Violations were cited in the following area(s)", "No violations were recorded at the time of this inspection", "Establishment Closed by DOHMH.  Violations were cited in the following area(s) and those requiring immediate action were addressed.")) %>% 
+      drop_na(score)
+```
+
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
