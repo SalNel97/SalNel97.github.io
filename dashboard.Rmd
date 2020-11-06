@@ -37,14 +37,13 @@ Column {data-width=650}
 
 [back to homepage](https://salnel97.github.io/index.html)\
 
-### A bar plot showing the number of inspections per restaurant cuisine type.
+### Scatter plot of inspection score as a function of inspection date.
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 rest_inspec %>% 
-  count(cuisine_description) %>% 
-  mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>% 
+  mutate(label = str_c("Score: ", score)) %>% 
   plot_ly(
-    x = ~cuisine_description, y = ~n, alpha = .5, type = "bar", mode = "markers", colors = "viridis")
+    x = ~inspection_date, y = ~score, color = ~critical_flag, text = ~label, alpha = .5, type = "scatter", mode = "markers")
 ```
 
 Column {data-width=350}
@@ -58,12 +57,13 @@ rest_inspec %>%
     x = ~boro, y = ~score, color = ~boro, alpha = .5, type = "box", mode = "markers", colors = "viridis")
 ```
 
-### Scatter plot of inspection score as a function of inspection date.
+### A bar plot showing the number of inspections per restaurant cuisine type.
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 rest_inspec %>% 
-  mutate(label = str_c("Score: ", score)) %>% 
+  count(cuisine_description) %>% 
+  mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>% 
   plot_ly(
-    x = ~inspection_date, y = ~score, color = ~critical_flag, text = ~label, alpha = .5, type = "scatter", mode = "markers")
+    x = ~cuisine_description, y = ~n, alpha = .5, type = "bar", mode = "markers", colors = "viridis")
 ```
 
