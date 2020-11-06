@@ -32,7 +32,7 @@ rest_inspec =
 ```
 
 
-Column {data-width=650}
+Column {data-width=550}
 -----------------------------------------------------------------------
 
 [back to homepage](https://salnel97.github.io/index.html)\
@@ -46,7 +46,7 @@ rest_inspec %>%
     x = ~inspection_date, y = ~score, color = ~critical_flag, text = ~label, alpha = .5, type = "scatter", mode = "markers")
 ```
 
-Column {data-width=350}
+Column {data-width=450}
 -----------------------------------------------------------------------
 
 ### A box plot showing the average inpection score per Borough
