@@ -1,0 +1,17 @@
+name: "Salah El-Sadek's Personal Website"
+output_dir: "."
+navbar:
+  title: "Home"
+  type: default
+  right:
+    - text: "About"
+      href: about.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<salah.e@columbia.edu>
+    - icon: fa-github fa-lg
+      href: http://github.com/SalNel97/
+    - icon: fa-linkedin fa-lg
+      href: http://linkedin.com/in/salahel-sadek
+output:
+  html_document:
+    theme: sandstone

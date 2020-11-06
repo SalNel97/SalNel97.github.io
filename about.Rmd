@@ -1,0 +1,44 @@
+---
+title: "Resume/CV"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+## {.tabset} 
+
+### Education
+
+* **The Ohio State University, Columbus, Ohio**
+
+  Bachelor of Science with Honors in Physics (Life Sciences Track), History Minor\
+  Graduated May 2018
+  
+
+* **Columbia University Mailman School of Public Health, New York, New York**
+  
+  Currently pursuing a Master of Public Health in Epidemiology
+
+
+### Research Experience
+
+
+
+### Work Experience
+
+* **Math Tutor at The Ohio State University (February 2015 – May 2016)**
+
+  * Tutored students who required extra help in grasping and studying mathematical concepts for their math courses.
+  
+* **Office Assistant at Raney House, OSU (August 2016 – May 2017)**
+
+  * Daily front desk tasks such as sorting mail, and answering residents’ inquiries.
+  * Helping organize residence hall events
+
+
+### Volunteer Experience
+
+
+
+### Other
