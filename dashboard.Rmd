@@ -35,6 +35,8 @@ rest_inspec =
 Column {data-width=650}
 -----------------------------------------------------------------------
 
+[back to homepage](https://salnel97.github.io/index.html)\
+
 ### Scatter plot of inspection score as a function of inspection date.
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
