@@ -1,5 +1,5 @@
 ---
-title: "Salah El-Sadek's Personal Website"
+title: "Salah El-Sadek"
 output: 
   html_document:
     toc: true
@@ -8,7 +8,19 @@ editor_options:
   chunk_output_type: console
 ---
 
-# You can call me Sal!
+#
+#
+#
+#
 
+![](./image.jpg)
+
+#
+#
+#
+#### ***You can call me Sal!***
+#
+#
+#####  I'm an aspiring public health professional and researcher currently pursuing a Master of Public Health in Epidemiology from Columbia University. My interests lie in epigenetics, the microbiome, and the intersection between climate change and infectious diseases.
 
 
