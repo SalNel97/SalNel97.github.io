@@ -33,7 +33,7 @@ rest_inspec =
 ```
 
 
-Column {data-width=700}
+Column {data-width=750}
 -----------------------------------------------------------------------
 
 [back to homepage](https://salnel97.github.io/index.html)\
@@ -61,7 +61,7 @@ rest_inspec %>%
 
 ```
 
-Column {data-width=300}
+Column {data-width=350}
 -----------------------------------------------------------------------
 
 ### A box plot showing the average inspection score per borough
