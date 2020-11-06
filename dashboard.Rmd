@@ -1,9 +1,12 @@
 ---
-title: "Untitled"
+title: "NYC Restaurant Inspections"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
+    source: embed
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -17,7 +20,7 @@ library(htmlwidgets)
 
 <!-- Setting up dataframe and filtering it out. -->
 
-```{r}
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
 data("rest_inspec")
 
 rest_inspec =
@@ -32,24 +35,33 @@ rest_inspec =
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Scatter plot of inspection score as a function of inspection date.
 
-```{r}
-
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+rest_inspec %>% 
+  mutate(label = str_c("Score: ", score)) %>% 
+  plot_ly(
+    x = ~inspection_date, y = ~score, color = ~critical_flag, text = ~label, alpha = .5, type = "scatter", mode = "markers", colors = "viridis")
 ```
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### A box plot showing the average inpection score per Borough
 
-```{r}
-
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+rest_inspec %>% 
+  plot_ly(
+    x = ~boro, y = ~score, color = ~boro, alpha = .5, type = "box", mode = "markers", colors = "viridis")
 ```
 
-### Chart C
+### A bar plot showing the number of inspections per restaurant cuisine type.
 
-```{r}
-
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+rest_inspec %>% 
+  count(cuisine_description) %>% 
+  mutate(cuisine_description = fct_reorder(cuisine_description, n)) %>% 
+  plot_ly(
+    x = ~cuisine_description, y = ~n, alpha = .5, type = "bar", mode = "markers", colors = "viridis")
 ```
 
